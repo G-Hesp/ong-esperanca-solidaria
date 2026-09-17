@@ -1,0 +1,19 @@
+{
+  "name": "ong-esperanca-solidaria",
+  "version": "0.1.0",
+  "description": "Projeto acad\u00eamico da ONG Esperan\u00e7a Solid\u00e1ria",
+  "scripts": {
+    "build": "node scripts/build.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "type": "commonjs",
+  "private": true,
+  "engines": {
+    "node": ">=22"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2",
+    "html-minifier-terser": "7.2.0"
+  }
+}

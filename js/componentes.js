@@ -1,0 +1,13 @@
+const modal=document.getElementById('modal');
+const abrir=document.getElementById('abrir-modal');
+abrir.addEventListener('click',()=>modal.showModal());
+for(const id of ['fechar-modal','entendi'])document.getElementById(id).addEventListener('click',()=>modal.close());
+modal.addEventListener('close',()=>abrir.focus());
+const form=document.getElementById('interesse-form');
+const email=document.getElementById('email');
+const retorno=document.getElementById('retorno');
+const toast=document.getElementById('toast-area');
+const fecharToast=document.getElementById('fechar-toast');
+fecharToast.addEventListener('click',()=>{toast.hidden=true;form.querySelector('button').focus();});
+email.addEventListener('input',()=>{email.removeAttribute('aria-invalid');email.classList.remove('campo-sucesso');email.setAttribute('aria-describedby','ajuda-email');retorno.replaceChildren();toast.hidden=true;});
+form.addEventListener('submit',event=>{event.preventDefault();const valido=email.validity.valid;email.setAttribute('aria-invalid',String(!valido));email.classList.toggle('campo-sucesso',valido);toast.hidden=true;if(!valido){retorno.innerHTML='<div class="alerta erro" id="erro-email"><span class="icone" aria-hidden="true">!</span><div><strong>Confira seu e-mail</strong><p>Preencha um endereço válido, como nome@exemplo.com.</p></div></div>';email.setAttribute('aria-describedby','ajuda-email erro-email');email.focus();}else{email.setAttribute('aria-describedby','ajuda-email');retorno.innerHTML='<div class="alerta sucesso"><span class="icone" aria-hidden="true">✓</span><div><strong>Preenchimento válido</strong><p>O e-mail atende ao formato esperado.</p></div></div>';toast.hidden=false;document.getElementById('toast-texto').innerHTML='<strong>Validação concluída</strong><small>Demonstração: nenhum dado foi enviado ou salvo.</small>';}});

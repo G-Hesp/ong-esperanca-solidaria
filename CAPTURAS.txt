@@ -1,0 +1,14 @@
+COMO PRODUZIR AS CAPTURAS
+
+Extraia todo o ZIP. Abra html/componentes.html no navegador.
+1. Capture os cartões com os badges e o alerta informativo.
+2. Clique em Validar interesse sem preencher o e-mail. Capture o alerta de erro.
+3. Preencha pessoa@example.com e valide. Capture o alerta de sucesso e o toast.
+4. Feche o toast e clique em Como contribuir. Capture o modal aberto.
+
+Teste Escape para fechar o modal e observe se o foco volta a Como contribuir.
+O botão Fechar notificação remove o toast. Não há armazenamento nem envio de dados.
+
+Arquivos novos: html/componentes.html, css/componentes.css, js/componentes.js.
+As três páginas HTML anteriores foram preservadas. A nova estilização está aplicada à página componentes.html.
+A sintaxe JavaScript e as referências locais foram verificadas. Não houve teste visual automatizado: o navegador remoto bloqueou a abertura do arquivo local.

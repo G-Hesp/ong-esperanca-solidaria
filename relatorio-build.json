@@ -1,0 +1,47 @@
+{
+  "files": [
+    {
+      "file": "css/alto-contraste.css",
+      "originalBytes": 3166,
+      "productionBytes": 3014
+    },
+    {
+      "file": "css/componentes.css",
+      "originalBytes": 6178,
+      "productionBytes": 6114
+    },
+    {
+      "file": "js/componentes.js",
+      "originalBytes": 1853,
+      "productionBytes": 1751
+    },
+    {
+      "file": "js/tema.js",
+      "originalBytes": 1668,
+      "productionBytes": 1138
+    },
+    {
+      "file": "html/cadastro.html",
+      "originalBytes": 5922,
+      "productionBytes": 4841
+    },
+    {
+      "file": "html/componentes.html",
+      "originalBytes": 4781,
+      "productionBytes": 4789
+    },
+    {
+      "file": "html/index.html",
+      "originalBytes": 2513,
+      "productionBytes": 2227
+    },
+    {
+      "file": "html/projetos.html",
+      "originalBytes": 3843,
+      "productionBytes": 3286
+    }
+  ],
+  "originalBytes": 29924,
+  "productionBytes": 27160,
+  "reductionPercent": 9.24
+}
