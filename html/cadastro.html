@@ -4,27 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cadastro | Esperança Solidária</title>
+<link rel="stylesheet" href="../css/componentes.css">
+<link rel="stylesheet" href="../css/site.css">
 <link rel="stylesheet" href="../css/alto-contraste.css">
 <script src="../js/tema.js"></script>
 </head>
-<body>
-<div class="controle-tema"><button type="button" class="alternar-contraste" data-alternar-contraste aria-pressed="false" hidden>Alto contraste</button><span id="estado-tema" class="somente-leitor" role="status"></span></div>
-  <a href="#conteudo">Pular para o conteúdo principal</a>
-  <header>
-    <p>ONG Esperança Solidária</p>
-    <nav aria-label="Navegação principal">
-      <ul>
-        <li><a href="index.html">Início</a></li>
-        <li><a href="projetos.html">Projetos sociais</a></li>
-        <li><a href="cadastro.html" aria-current="page">Cadastro</a></li>
-      </ul>
-    </nav>
-  </header>
+<body class="site">
 
-  <main id="conteudo">
-    <h1>Cadastro de participantes</h1>
+  <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo principal</a>
+  <header class="topo-site"><div class="container cabecalho"><a class="marca" href="index.html">Esperança Solidária<span>Juntos pela comunidade</span></a><nav aria-label="Navegação principal"><ul><li><a href="index.html">Início</a></li><li><a href="projetos.html">Projetos sociais</a></li><li><a href="cadastro.html" aria-current="page">Cadastro</a></li></ul></nav><div class="controle-tema"><button type="button" class="alternar-contraste" data-alternar-contraste aria-pressed="false" hidden>Alto contraste</button><span id="estado-tema" class="somente-leitor" role="status"></span></div></div></header>
+
+  <main id="conteudo" class="container pagina pagina-cadastro" tabindex="-1">
+    <p class="sobretitulo">SEU PRÓXIMO PASSO</p><h1>Vamos participar?</h1>
     <p>Os campos indicados como obrigatórios devem ser preenchidos.</p>
-    <p id="aviso">Formulário de demonstração: os dados não serão enviados
+    <p id="aviso" class="alerta informacao">Formulário de demonstração: os dados não serão enviados
       nem armazenados. Utilize dados fictícios para testar.</p>
 
     <form id="formulario" action="#" method="post" aria-describedby="aviso">
@@ -114,12 +107,12 @@
         </p>
       </fieldset>
 
-      <button type="submit">Validar cadastro de demonstração</button>
+      <button class="botao" type="submit">Validar cadastro de demonstração</button>
       <p id="resultado" role="status"></p>
     </form>
   </main>
 
-  <footer>
+  <footer class="container rodape-site">
     <p>Esperança Solidária — projeto acadêmico de uma ONG fictícia.</p>
     <address>
       Contato: <a href="mailto:contato@ong.example">contato@ong.example</a>
